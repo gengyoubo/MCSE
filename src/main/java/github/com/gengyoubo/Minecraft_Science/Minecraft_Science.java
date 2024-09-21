@@ -22,7 +22,6 @@ public class Minecraft_Science
     public Minecraft_Science()
     {
         FMLJavaModLoadingContext.get().getModEventBus().addListener(this::setup);
-        FMLJavaModLoadingContext.get().getModEventBus().addListener(this::enqueueIMC);
         FMLJavaModLoadingContext.get().getModEventBus().addListener(this::processIMC);
         MinecraftForge.EVENT_BUS.register(this);
     }
@@ -30,10 +29,6 @@ public class Minecraft_Science
     {
         LOGGER.info("HELLO FROM PREINIT");
         LOGGER.info("DIRT BLOCK >> {}", Blocks.DIRT.getRegistryName());
-    }
-    private void enqueueIMC(final InterModEnqueueEvent event)
-    {
-        InterModComms.sendTo("mcse", "helloworld", () -> { LOGGER.info("Hello world from the MDK"); return "Hello world";});
     }
     private void processIMC(final InterModProcessEvent event)
     {
