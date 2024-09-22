@@ -1,10 +1,10 @@
-package github.com.gengyoubo.Minecraft_Science.Items.Alphabet.Capital;
+package github.com.gengyoubo.Minecraft_Science.Items.Alphabet.Uppercase;
 
 import github.com.gengyoubo.Minecraft_Science.Tabs.GENERIC_TAB;
 import net.minecraft.world.item.Item;
 
-public class Capital_L extends Item {
-    public Capital_L() {
+public class Q extends Item {
+    public Q() {
         super(new Item.Properties().tab(GENERIC_TAB.getInstance())); // 设置创造模式物品栏
     }
 }
