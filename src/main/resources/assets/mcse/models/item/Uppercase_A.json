@@ -1,8 +1,8 @@
 {
 	"texture_size": [32, 32],
 	"textures": {
-		"0": "mcse:items/texture_a",
-		"particle": "mcse:items/texture_a"
+		"0": "mcse:items/text_generic_image",
+		"particle": "mcse:items/text_generic_image"
 	},
 	"elements": [
 		{
