@@ -2,6 +2,9 @@ package github.com.gengyoubo.Minecraft_Science.Other;
 
 import github.com.gengyoubo.Minecraft_Science.Items.Alphabet.Uppercase.*;
 import github.com.gengyoubo.Minecraft_Science.Items.Alphabet.Lowercase.*;
+import github.com.gengyoubo.Minecraft_Science.Items.chemical.Reality_Ingot;
+import github.com.gengyoubo.Minecraft_Science.Items.chemical.Reality_Powder;
+import github.com.gengyoubo.Minecraft_Science.Items.chemical.periodic_table.Fe;
 import net.minecraft.world.item.Item;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
@@ -68,6 +71,9 @@ public class ModEventSubscriber {
         registerItem(event, new Uppercase_X(), "uppercase_x");
         registerItem(event, new Uppercase_Y(), "uppercase_y");
         registerItem(event, new Uppercase_Z(), "uppercase_z");
+        registerItem(event, new Fe(), "fe");
+        registerItem(event, new Reality_Powder(), "reality_powder");
+        registerItem(event,new Reality_Ingot(),"reality_ingot");
         // 以registerItem的格式注册物品↑
     }
     //一键注册物品的属性
@@ -78,5 +84,6 @@ public class ModEventSubscriber {
     public static final DeferredRegister<Item> REGISTRY = DeferredRegister.create(ForgeRegistries.ITEMS, "mcse");
     //需要用模组物品的图标，在这里注册↓
     public static final RegistryObject<Item> a = REGISTRY.register("a", github.com.gengyoubo.Minecraft_Science.Items.Alphabet.Lowercase.a::new);
+    public static final RegistryObject<Item> Fe = REGISTRY.register("fe", github.com.gengyoubo.Minecraft_Science.Items.chemical.periodic_table.Fe::new);
 
 }

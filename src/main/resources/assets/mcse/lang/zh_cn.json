@@ -51,6 +51,9 @@
   "item.mcse.uppercase_x": "X",
   "item.mcse.uppercase_y": "Y",
   "item.mcse.uppercase_z": "Z",
+  "item.mcse.fe": "Fe",
+  "item.mcse.reality_ingot": "现实锭",
+  "item.mcse.reality_powder": "现实粉末",
 
   "itemGroup.generic_tab": "通用",
   "itemGroup.biologic_tab": "生物",

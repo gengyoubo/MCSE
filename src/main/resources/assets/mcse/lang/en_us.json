@@ -51,6 +51,9 @@
     "item.mcse.uppercase_x": "X",
     "item.mcse.uppercase_y": "Y",
     "item.mcse.uppercase_z": "Z",
+    "item.mcse.fe": "Fe",
+    "item.mcse.reality_ingot": "Reality Ingot",
+    "item.mcse.reality_powder": "Reality Powder",
 
     "itemGroup.generic_tab": "Generic",
     "itemGroup.biologic_tab": "Biologic",

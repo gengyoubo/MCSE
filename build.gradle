@@ -35,10 +35,14 @@ minecraft {
 }
 sourceSets.main.resources { srcDir 'src/generated/resources' }
 repositories {
+    maven {
+        url "https://cursemaven.com"
+    }
 }
 
 dependencies {
     minecraft 'net.minecraftforge:forge:1.18.2-40.2.21'
+    implementation fg.deobf("curse.maven:JEI-238222:5534399")
 }
 jar {
     manifest {

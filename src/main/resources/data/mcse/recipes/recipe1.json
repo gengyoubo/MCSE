@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 16,
+  "ingredient": {
+    "item": "mcse:reality_ingot"
+  },
+  "result": "mcse:reality_powder"
+}

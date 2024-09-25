@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "mcse:reality_powder"
+    },
+    {
+      "item": "mcse:fe"
+    }
+  ],
+  "result": {
+    "item": "minecraft:iron_ingot",
+    "count": 1
+  }
+}

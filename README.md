@@ -6,7 +6,7 @@
 # Physics<br>
 In the physics chapter, the ultimate goal is to create advanced machinery and advanced generators. Unlike Thermal Expansion and Mechanical Dynamics, the player needs to find knowledge of physics in order to create the machinery, otherwise they cannot advance the process.
 # Chemistry<br>
-In the Chemistry chapter, the player will need to find word mines, which they will then need to use to create a variety of chemicals. In addition to text mines, the player will need to use “Realized Super Particles” to transform the text chemicals into something usable. This is the most important feature of Chemistry!
+In the Chemistry chapter, the player will need to find word mines, which they will then need to use to create a variety of chemicals. In addition to text mines, the player will need to use “Reality Powder” to transform the text chemicals into something usable. This is the most important feature of Chemistry!
 # Creature<br>
 In the Creature Chapter, the player needs to research the various traits of the creatures and then use them to strengthen the player at a later stage. This is the best feature of the creature chapter!
 # Geology<br>
