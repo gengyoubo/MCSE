@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "XY ",
+    "   ",
+    "   "
+  ],
+  "key": {
+    "X": {
+      "item": "mcse:uppercase_f"
+    },
+    "Y": {
+      "item": "mcse:e"
+    }
+  },
+  "result": {
+    "item": "mcse:fe",
+    "count": 1
+  }
+}
