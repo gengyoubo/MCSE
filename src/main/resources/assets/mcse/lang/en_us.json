@@ -54,11 +54,13 @@
     "item.mcse.fe": "Fe",
     "item.mcse.reality_ingot": "Reality Ingot",
     "item.mcse.reality_powder": "Reality Powder",
-    "item.mcse.word_ore": "Word Ore",
+
+    "block.mcse.word_ore": "Word Ore",
 
     "itemGroup.generic_tab": "Generic",
     "itemGroup.biologic_tab": "Biologic",
     "itemGroup.chemical_tab": "Chemical",
     "itemGroup.physics_tab": "Physics",
-    "itemGroup.geologic_tab": "Geologic"
+    "itemGroup.geologic_tab": "Geologic",
+    "itemGroup.alphabet_tab": "Alphabet"
 }

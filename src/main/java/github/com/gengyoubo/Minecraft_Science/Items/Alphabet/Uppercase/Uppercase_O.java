@@ -1,10 +1,11 @@
 package github.com.gengyoubo.Minecraft_Science.Items.Alphabet.Uppercase;
 
-import github.com.gengyoubo.Minecraft_Science.Tabs.GENERIC_TAB;
+import github.com.gengyoubo.Minecraft_Science.Tabs.ALPHABET_TAB;
+
 import net.minecraft.world.item.Item;
 
 public class Uppercase_O extends Item {
     public Uppercase_O() {
-        super(new Item.Properties().tab(GENERIC_TAB.getInstance())); // 设置创造模式物品栏
+        super(new Item.Properties().tab(ALPHABET_TAB.getInstance())); // 设置创造模式物品栏
     }
 }
