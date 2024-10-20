@@ -49,7 +49,7 @@ repositories {
 dependencies {
     minecraft 'net.minecraftforge:forge:1.18.2-40.2.21'
     implementation fg.deobf("curse.maven:JEI-238222:5534399")
-    //implementation fg.deobf("github.com.gengyoubo.MCSE:MCSE:1.0.0")
+    //implementation fg.deobf("github.com.gengyoubo.MCSE:Minecraft_Science:1.0.0")
 
 }
 jar {
