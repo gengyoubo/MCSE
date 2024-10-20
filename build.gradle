@@ -14,8 +14,8 @@ plugins {
 apply plugin: 'net.minecraftforge.gradle'
 
 version = mcseVersion
-group = 'github.com.gengyoubo.Minecraft_Science' // http://maven.apache.org/guides/mini/guide-naming-conventions.html
-archivesBaseName = 'Minecraft Science'
+group = 'github.com.gengyoubo.MCSE' // http://maven.apache.org/guides/mini/guide-naming-conventions.html
+archivesBaseName = 'Minecraft_Science'
 
 java.toolchain.languageVersion = JavaLanguageVersion.of(17)
 println "Java: ${System.getProperty 'java.version'}, JVM: ${System.getProperty 'java.vm.version'} (${System.getProperty 'java.vendor'}), Arch: ${System.getProperty 'os.arch'}"
@@ -40,11 +40,17 @@ repositories {
     maven {
         url "https://cursemaven.com"
     }
+    maven {
+        name = "MCSE"
+        url = "https://raw.githubusercontent.com/gengyoubo/MCSE/master/mcmodsrepo/"
+    }
 }
 
 dependencies {
     minecraft 'net.minecraftforge:forge:1.18.2-40.2.21'
     implementation fg.deobf("curse.maven:JEI-238222:5534399")
+    //implementation fg.deobf("github.com.gengyoubo.MCSE:MCSE:1.0.0")
+
 }
 jar {
     manifest {
