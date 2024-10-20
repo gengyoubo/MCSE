@@ -3,16 +3,15 @@ loaderVersion="[40,)"
 license="All rights reserved"
 [[mods]]
 modId="mcse"
-version="0.0.0"
+version="1.0.0"
 displayName="Minecraft Science"
-logoFile="examplemod.png"
-credits="Thanks for this example mod goes to Java"
-authors="gengyoubo"
-description='''你好'''
+logoFile="MCSE.png"
+credits="gengyoubo（耿悠博）"
+authors="gengyoubo（耿悠博）"
 [[dependencies.mcse]]
     modId="forge"
     mandatory=true
-    versionRange="[40,)"
+    versionRange="[40.2.0,)"
     ordering="NONE"
     side="BOTH"
 [[dependencies.mcse]]
