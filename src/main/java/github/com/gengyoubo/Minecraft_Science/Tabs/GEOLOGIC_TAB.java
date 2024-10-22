@@ -10,7 +10,7 @@ public class GEOLOGIC_TAB {
     private static final CreativeModeTab GEOLOGIC_TAB = new CreativeModeTab("generic_tab") {
         @Override
         public @NotNull ItemStack makeIcon() {
-            return new ItemStack(ModEventSubscriber.a.get()); // 使用物品 a_Item 作为图标
+            return new ItemStack(ModEventSubscriber.Lowercase_a.get()); // 使用物品 a_Item 作为图标
         }
     };
 

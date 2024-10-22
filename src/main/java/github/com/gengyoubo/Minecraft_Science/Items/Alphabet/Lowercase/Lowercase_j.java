@@ -1,11 +1,10 @@
 package github.com.gengyoubo.Minecraft_Science.Items.Alphabet.Lowercase;
 
 import github.com.gengyoubo.Minecraft_Science.Tabs.ALPHABET_TAB;
-
 import net.minecraft.world.item.Item;
 
-public class t extends Item {
-    public t() {
-        super(new Item.Properties().tab(ALPHABET_TAB.getInstance()));
+public class Lowercase_j extends Item {
+    public Lowercase_j() {
+        super(new Properties().tab(ALPHABET_TAB.getInstance()));
     }
 }

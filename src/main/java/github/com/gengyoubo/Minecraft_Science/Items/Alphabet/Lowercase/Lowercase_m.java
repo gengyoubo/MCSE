@@ -4,8 +4,8 @@ import github.com.gengyoubo.Minecraft_Science.Tabs.ALPHABET_TAB;
 
 import net.minecraft.world.item.Item;
 
-public class u extends Item {
-    public u() {
+public class Lowercase_m extends Item {
+    public Lowercase_m() {
         super(new Item.Properties().tab(ALPHABET_TAB.getInstance()));
     }
 }
