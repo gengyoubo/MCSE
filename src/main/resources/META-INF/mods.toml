@@ -8,6 +8,11 @@ displayName="Minecraft Science"
 logoFile="MCSE.png"
 credits="gengyoubo（耿悠博）"
 authors="gengyoubo（耿悠博）"
+issueTrackerURL = "https://github.com/gengyoubo/MCSE/issues" #optional
+description='''
+Minecraft Science module is divided into four parts: Physics, Chemistry, Biology, and Geology.
+'''
+displayURL = "https://github.com/gengyoubo/MCSE"
 [[dependencies.mcse]]
     modId="forge"
     mandatory=true
