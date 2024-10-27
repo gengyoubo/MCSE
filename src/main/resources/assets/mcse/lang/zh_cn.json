@@ -54,12 +54,19 @@
   "item.mcse.fe": "Fe",
   "item.mcse.reality_ingot": "现实锭",
   "item.mcse.reality_powder": "现实粉末",
+
   "block.mcse.word_ore": "文字矿",
+  "block.mcse.scrt": "单化学反应台",
+
 
   "itemGroup.generic_tab": "通用",
   "itemGroup.biologic_tab": "生物",
   "itemGroup.chemical_tab": "化学",
   "itemGroup.physics_tab": "物理",
   "itemGroup.geologic_tab": "地质",
-  "itemGroup.alphabet_tab": "字母"
+  "itemGroup.alphabet_tab": "字母",
+
+
+  "gui.mcse.label_text": "单化学反应台"
+
 }

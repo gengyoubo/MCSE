@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "mcse:blocks/a",
+    "up": "mcse:blocks/a",
+    "north": "mcse:blocks/a",
+    "east": "mcse:blocks/a",
+    "south": "mcse:blocks/a",
+    "west": "mcse:blocks/a",
+    "particle": "mcse:blocks/a"
+  }
+}

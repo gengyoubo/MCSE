@@ -1,6 +1,6 @@
 package github.com.gengyoubo.Minecraft_Science.Tabs;
 //通用
-import github.com.gengyoubo.Minecraft_Science.ModEventSubcriber.ModEventSubscriber;
+import github.com.gengyoubo.Minecraft_Science.inti.ModEventSubcriber.ModEventSubscriber;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.ItemStack;
 import org.jetbrains.annotations.NotNull;

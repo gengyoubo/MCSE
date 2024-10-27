@@ -15,7 +15,7 @@ apply plugin: 'net.minecraftforge.gradle'
 
 version = mcseVersion
 group = 'github.com.gengyoubo.MCSE' // http://maven.apache.org/guides/mini/guide-naming-conventions.html
-archivesBaseName = 'Minecraft_Science'
+archivesBaseName = 'Minecraft Science'
 
 java.toolchain.languageVersion = JavaLanguageVersion.of(17)
 println "Java: ${System.getProperty 'java.version'}, JVM: ${System.getProperty 'java.vm.version'} (${System.getProperty 'java.vendor'}), Arch: ${System.getProperty 'os.arch'}"
@@ -35,6 +35,7 @@ minecraft {
         }
     }
 }
+
 sourceSets.main.resources { srcDir 'src/generated/resources' }
 repositories {
     maven {
@@ -46,9 +47,8 @@ repositories {
 dependencies {
     minecraft 'net.minecraftforge:forge:1.18.2-40.2.21'
     implementation fg.deobf("curse.maven:JEI-238222:5534399")
-
-
 }
+
 jar {
     manifest {
         attributes([
@@ -62,6 +62,7 @@ jar {
         ])
     }
 }
+
 jar.finalizedBy('reobfJar')
 publishing {
     publications {
@@ -75,6 +76,7 @@ publishing {
         }
     }
 }
+
 tasks.withType(JavaCompile).configureEach {
     options.encoding = 'UTF-8' // Use the UTF-8 charset for Java compilation
 }
