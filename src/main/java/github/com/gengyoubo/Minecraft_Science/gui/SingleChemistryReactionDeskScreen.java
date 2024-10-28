@@ -35,7 +35,8 @@ public class SingleChemistryReactionDeskScreen extends AbstractContainerScreen<S
         this.imageHeight = 166;
     }
 
-    private static final ResourceLocation texture = new ResourceLocation("mcse:textures/screens/arrow.png");
+    private static final ResourceLocation texture =
+            new ResourceLocation("mcse:textures/screens/arrow.png");
 
     @Override
     public void render(PoseStack ms, int mouseX, int mouseY, float partialTicks) {
@@ -70,7 +71,8 @@ public class SingleChemistryReactionDeskScreen extends AbstractContainerScreen<S
 
     @Override
     protected void renderLabels(PoseStack poseStack, int mouseX, int mouseY) {
-        this.font.draw(poseStack, new TranslatableComponent("gui.mcse.label_text"), 79, 5, -12829636);
+        this.font.draw(poseStack,
+                new TranslatableComponent("gui.mcse.label_text"), 70, 5, -12829636);
     }
 
     @Override
@@ -83,11 +85,15 @@ public class SingleChemistryReactionDeskScreen extends AbstractContainerScreen<S
     public void init() {
         super.init();
         this.minecraft.keyboardHandler.setSendRepeatsToGui(true);
-        imagebutton_img_202410266582_25x16 = new ImageButton(this.leftPos + 78, this.topPos + 36, 25, 16, 0, 0, 16, new ResourceLocation("g:textures/screens/atlas/imagebutton_img_202410266582_25x16.png"), 25, 32, e -> {
-            if (true) {
+        imagebutton_img_202410266582_25x16 = new ImageButton(this.leftPos + 78,
+                this.topPos + 36, 25, 16, 0, 0, 16,
+                new ResourceLocation("mcse:textures/screens/atlas/imagebutton_img_202410266582_25x16.png"), 25, 32, e -> {
+            try {
                 Minecraft_Science.PACKET_HANDLER.sendToServer(new MCSEButtonMessage(0, x, y, z));
-                MCSEButtonMessage.handleButtonAction(entity, 0, x, y, z);
+            }catch (IllegalArgumentException e1){
+                System.out.println("这是");
             }
+            MCSEButtonMessage.handleButtonAction(entity, 0, x, y, z);
         });
         guistate.put("button:imagebutton_img_202410266582_25x16", imagebutton_img_202410266582_25x16);
         this.addRenderableWidget(imagebutton_img_202410266582_25x16);
