@@ -91,7 +91,7 @@ public class SingleChemistryReactionDeskScreen extends AbstractContainerScreen<S
             try {
                 Minecraft_Science.PACKET_HANDLER.sendToServer(new MCSEButtonMessage(0, x, y, z));
             }catch (IllegalArgumentException e1){
-                System.out.println("这是");
+                System.out.println("这是材料");
             }
             MCSEButtonMessage.handleButtonAction(entity, 0, x, y, z);
         });
