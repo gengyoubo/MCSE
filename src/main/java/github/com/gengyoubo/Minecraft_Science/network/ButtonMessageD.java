@@ -56,12 +56,13 @@ public class ButtonMessageD {
     public static void handleButtonAction(Player entity, int buttonID, int x, int y, int z) {
         Level world = entity.level;
         HashMap guistate = DualChemicalReactionTableMenu.guistate;
+
         // security measure to prevent arbitrary chunk generation
         if (!world.hasChunkAt(new BlockPos(x, y, z)))
             return;
         if (buttonID == 0) {
-
-            DualReactionProcess.execute(entity);
+            DualReactionProcess process = new DualReactionProcess(); // 创建实例
+            process.execute(entity); // 调用实例方法
         }
     }
 

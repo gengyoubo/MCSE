@@ -20,3 +20,23 @@
 
 # 基本流程
 在初期你需要躲避各种自然灾害的情况上然后寻找文字矿。当然，光有文字矿是不够的，需要能可以大小写的“大小写粉末”和可以实际使用的“现实化超粒子”。比如说你采集到S和i和n矿，然后你需要用大小写粉末把S变成s，然后合成为sin。或者是你采集到了f和e矿，然后使用大小写粉末把f变成F，然后合成为Fe。然后最后使用现实化超粒子把它变成实际可以使用的铁......等等等等。
+# 我想制作你的模组的附属，应该怎么做？
+首先导入maven库
+```
+repositories { 
+maven {
+        name = "MCSE"
+        url = "https://raw.githubusercontent.com/gengyoubo/MCSE/master/mcmodsrepo/"
+    }
+}
+```
+然后加入本模组
+```
+dependencies {
+    implementation fg.deobf("github.com.gengyoubo.MCSE:MCSE:版本")
+}
+```
+最新版本为1.0.0  
+可用的版本为1.0.0  
+如果想往模组添加配方的可以看本模组的wiki!  
+https://github.com/gengyoubo/MCSE/wiki
