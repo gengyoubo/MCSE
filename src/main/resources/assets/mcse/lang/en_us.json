@@ -57,6 +57,7 @@
 
     "block.mcse.word_ore": "Word Ore",
     "block.mcse.scrt": "single chemistry reaction desk",
+    "block.mcse.dcrt": "dual chemical reaction table",
 
     "itemGroup.generic_tab": "Generic",
     "itemGroup.biologic_tab": "Biologic",
@@ -65,5 +66,6 @@
     "itemGroup.geologic_tab": "Geologic",
     "itemGroup.alphabet_tab": "Alphabet",
 
-    "gui.mcse.label_text": "single chemistry reaction desk"
+    "gui.mcse.label_text": "single chemistry reaction desk",
+    "gui.test.double.label_text2": "dual chemical reaction table"
 }

@@ -57,7 +57,7 @@
 
   "block.mcse.word_ore": "文字矿",
   "block.mcse.scrt": "单化学反应台",
-
+  "block.mcse.dcrt": "双化学反应台",
 
   "itemGroup.generic_tab": "通用",
   "itemGroup.biologic_tab": "生物",
@@ -67,6 +67,7 @@
   "itemGroup.alphabet_tab": "字母",
 
 
-  "gui.mcse.label_text": "单化学反应台"
+  "gui.mcse.label_text": "单化学反应台",
+  "gui.test.double.label_text2": "双化学反应台"
 
 }

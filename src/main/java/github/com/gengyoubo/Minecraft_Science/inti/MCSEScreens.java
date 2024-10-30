@@ -1,5 +1,6 @@
 package github.com.gengyoubo.Minecraft_Science.inti;
 
+import github.com.gengyoubo.Minecraft_Science.gui.DualChemicalReactionTableScreen;
 import github.com.gengyoubo.Minecraft_Science.gui.SingleChemistryReactionDeskScreen;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
@@ -14,6 +15,7 @@ public class MCSEScreens {
     public static void clientSetup(FMLClientSetupEvent event) {
         event.enqueueWork(() -> {
             MenuScreens.register(MCSEMenus.SC, SingleChemistryReactionDeskScreen::new);
+            MenuScreens.register(MCSEMenus.DC, DualChemicalReactionTableScreen::new);
         });
     }
 }
