@@ -37,6 +37,7 @@ dependencies {
 }
 ```
 最新版本为1.0.0  
-可用的版本为1.0.0  
+可用的版本为(无)
+如果想添加模组的暂时使用cursemaven来获取
 如果想往模组添加配方的可以看本模组的wiki!  
 https://github.com/gengyoubo/MCSE/wiki
