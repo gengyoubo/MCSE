@@ -15,6 +15,7 @@ public class ModEventSubscriber_BlockItem {
     public static final RegistryObject<Item> WORD_ORE = block(ModEventSubscriber_Block.WORD_ORE, GENERIC_TAB.getInstance());
     public static final RegistryObject<Item> SCRT = block(ModEventSubscriber_Block.SCRT, CHEMICAL_TAB.getInstance());
     public static final RegistryObject<Item> DCRT = block(ModEventSubscriber_Block.DCRT, CHEMICAL_TAB.getInstance());
+    public static final RegistryObject<Item> CRTF = block(ModEventSubscriber_Block.CRTF, CHEMICAL_TAB.getInstance());
 
     private static RegistryObject<Item> block(RegistryObject<Block> block, CreativeModeTab tab) {
         return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));

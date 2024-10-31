@@ -67,5 +67,6 @@
     "itemGroup.alphabet_tab": "Alphabet",
 
     "gui.mcse.label_text": "single chemistry reaction desk",
-    "gui.test.double.label_text2": "dual chemical reaction table"
+    "gui.mcse.double.label_text2": "dual chemical reaction table",
+    "gui.mcse.chemical_reaction_tablefinaltype.label_text3": "chemical reaction table (final type)"
 }

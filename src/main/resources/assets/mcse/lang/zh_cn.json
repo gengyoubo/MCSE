@@ -68,6 +68,8 @@
 
 
   "gui.mcse.label_text": "单化学反应台",
-  "gui.test.double.label_text2": "双化学反应台"
+  "gui.mcse.double.label_text2": "双化学反应台",
+  "gui.mcse.chemical_reaction_tablefinaltype.label_text3": "化学反应台（最终型）"
+
 
 }

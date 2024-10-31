@@ -1,5 +1,6 @@
 package github.com.gengyoubo.Minecraft_Science.inti;
 
+import github.com.gengyoubo.Minecraft_Science.world.inventory.ChemicalReactionTablefinaltypeMenu;
 import github.com.gengyoubo.Minecraft_Science.world.inventory.DualChemicalReactionTableMenu;
 import github.com.gengyoubo.Minecraft_Science.world.inventory.SingleChemistryReactionDeskMenu;
 import net.minecraftforge.event.RegistryEvent;
@@ -13,6 +14,7 @@ public class MCSEMenus {
 
     public static MenuType<SingleChemistryReactionDeskMenu> SC;
     public static MenuType<DualChemicalReactionTableMenu> DC;
+    public static MenuType<ChemicalReactionTablefinaltypeMenu> FT;
 
     @SubscribeEvent
     public static void registerContainers(RegistryEvent.Register<MenuType<?>> event) {
@@ -22,5 +24,8 @@ public class MCSEMenus {
         DC = new MenuType<>((IContainerFactory<DualChemicalReactionTableMenu>) DualChemicalReactionTableMenu::new);
         DC.setRegistryName("mcse", "dual_chemical_reaction_table");
         event.getRegistry().register(DC);
+        FT = new MenuType<>((IContainerFactory<ChemicalReactionTablefinaltypeMenu>) ChemicalReactionTablefinaltypeMenu::new);
+        FT.setRegistryName("mcse", "chemical_reaction_table_final_type");
+        event.getRegistry().register(FT);
     }
 }
