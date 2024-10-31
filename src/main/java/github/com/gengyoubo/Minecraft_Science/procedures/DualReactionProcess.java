@@ -46,7 +46,7 @@ public class DualReactionProcess {
         void handle(Map<?, ?> slots, Player player);
     }
 
-    private static class ChemicalReaction implements Reaction {
+    public static class ChemicalReaction implements Reaction {
         private final String item0;
         private final String item1;
         private final String resultItem0;
@@ -54,7 +54,6 @@ public class DualReactionProcess {
         private final int amount0;
         private final int amount1;
 
-        // 构造函数
         public ChemicalReaction(String item0, String item1, String resultItem0, String resultItem1, int amount0, int amount1) {
             this.item0 = item0;
             this.item1 = item1;
@@ -69,7 +68,6 @@ public class DualReactionProcess {
             boolean condition1 = isItemEqual(slot0Item, item0) && getSlotAmount(slots, 0) >= amount0 &&
                     isItemEqual(slot1Item, item1) && getSlotAmount(slots, 1) >= amount1;
 
-            // 添加反向检查
             boolean condition2 = isItemEqual(slot0Item, item1) && getSlotAmount(slots, 0) >= amount1 &&
                     isItemEqual(slot1Item, item0) && getSlotAmount(slots, 1) >= amount0;
 
@@ -78,8 +76,11 @@ public class DualReactionProcess {
 
         @Override
         public void handle(Map<?, ?> slots, Player player) {
-            setSlotItem(slots, 3, resultItem0, amount0, player); // 生成结果物品0
-            setSlotItem(slots, 4, resultItem1, amount1, player); // 生成结果物品1
+            setSlotItem(slots, 3, resultItem0, amount0, player);
+            setSlotItem(slots, 4, resultItem1, amount1, player);
+
+            DualReactionProcess.removeSlotItem(slots, 0, amount0, player);
+            DualReactionProcess.removeSlotItem(slots, 1, amount1, player);
         }
     }
 
@@ -103,4 +104,11 @@ public class DualReactionProcess {
         ((Slot) slots.get(slotIndex)).set(stack);
         player.containerMenu.broadcastChanges();
     }
+
+    public static void removeSlotItem(Map<?, ?> slots, int slotIndex, int count, Player player) {
+        ItemStack stack = ((Slot) slots.get(slotIndex)).getItem();
+        stack.shrink(count);
+        player.containerMenu.broadcastChanges();
+    }
 }
+
