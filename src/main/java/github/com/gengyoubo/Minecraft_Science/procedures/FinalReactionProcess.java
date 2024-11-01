@@ -69,7 +69,7 @@ public class FinalReactionProcess {
             boolean condition2 = inputItem2 != null && (isItemAndAmount(slots, 0, inputItem2, inputAmount2) || isItemAndAmount(slots, 1, inputItem2, inputAmount2) || isItemAndAmount(slots, 2, inputItem2, inputAmount2));
             boolean condition3 = inputItem3 != null && (isItemAndAmount(slots, 0, inputItem3, inputAmount3) || isItemAndAmount(slots, 1, inputItem3, inputAmount3) || isItemAndAmount(slots, 2, inputItem3, inputAmount3));
 
-            return condition1 && (!(inputItem2 != null) || condition2) && (!(inputItem3 != null) || condition3);
+            return condition1 && (inputItem2 == null || condition2) && (inputItem3 == null || condition3);
         }
 
         public void handle(Map<?, ?> slots, Player player) {
