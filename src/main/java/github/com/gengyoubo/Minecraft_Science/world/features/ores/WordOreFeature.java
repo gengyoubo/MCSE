@@ -1,5 +1,6 @@
 package github.com.gengyoubo.Minecraft_Science.world.features.ores;
 
+import github.com.gengyoubo.Minecraft_Science.Minecraft_Science_Config;
 import github.com.gengyoubo.Minecraft_Science.inti.ModEventSubcriber.ModEventSubscriber_Block;
 import net.minecraft.core.Holder;
 import net.minecraft.core.Registry;
@@ -34,9 +35,36 @@ public class WordOreFeature extends OreFeature {
     public static Holder<PlacedFeature> PLACED_FEATURE = null;
 
     public static Feature<?> feature() {
+        // 初始化自定义的 Feature
         FEATURE = new WordOreFeature();
-        CONFIGURED_FEATURE = FeatureUtils.register("mcse:wordore", FEATURE, new OreConfiguration(WordOreFeatureRuleTest.INSTANCE, ModEventSubscriber_Block.WORD_ORE.get().defaultBlockState(), 32));
-        PLACED_FEATURE = PlacementUtils.register("mcse:wordore", CONFIGURED_FEATURE, List.of(CountPlacement.of(32), InSquarePlacement.spread(), HeightRangePlacement.triangle(VerticalAnchor.absolute(-64), VerticalAnchor.absolute(128)), BiomeFilter.biome()));
+
+        // 使用配置文件的值来动态设置矿石生成数量和高度
+        int oreAmount = Minecraft_Science_Config.WordOreAmount.get();
+        int heightMax = Minecraft_Science_Config.WordOreHeightMax.get();
+        int heightMin = Minecraft_Science_Config.WordOreHeightMin.get();
+
+        // 注册配置的矿石生成特征
+        CONFIGURED_FEATURE = FeatureUtils.register(
+                "mcse:wordore",
+                FEATURE,
+                new OreConfiguration(WordOreFeatureRuleTest.INSTANCE, ModEventSubscriber_Block.WORD_ORE.get().defaultBlockState(), oreAmount)
+        );
+
+        // 注册放置特征，使用配置文件的高度范围
+        PLACED_FEATURE = PlacementUtils.register(
+                "mcse:wordore",
+                CONFIGURED_FEATURE,
+                List.of(
+                        CountPlacement.of(oreAmount),  // 使用配置文件的矿石生成数量
+                        InSquarePlacement.spread(),
+                        HeightRangePlacement.uniform(
+                                VerticalAnchor.absolute(heightMin),
+                                VerticalAnchor.absolute(heightMax)
+                        ),
+                        BiomeFilter.biome()
+                )
+        );
+
         return FEATURE;
     }
 

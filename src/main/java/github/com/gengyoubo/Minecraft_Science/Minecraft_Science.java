@@ -9,7 +9,9 @@ import github.com.gengyoubo.Minecraft_Science.inti.ModEventSubcriber.ModEventSub
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraftforge.eventbus.api.IEventBus;
+import net.minecraftforge.fml.ModLoadingContext;
 import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.fml.config.ModConfig;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.network.NetworkEvent;
 import net.minecraftforge.network.NetworkRegistry;
@@ -31,6 +33,7 @@ public class Minecraft_Science {
     private static final Logger LOGGER = LogUtils.getLogger();
     public Minecraft_Science() {
         IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
+        ModLoadingContext.get().registerConfig(ModConfig.Type.COMMON, Minecraft_Science_Config.CONFIG);
 
         // 注册其他内容
         ModEventSubscriber_Block.REGISTRY.register(bus);
